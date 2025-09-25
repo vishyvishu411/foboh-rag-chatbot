@@ -53,7 +53,7 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
    Without this, the chatbot will not be able to create meaningful
    highlights.
 
-FOBOH News Aggregation & Chatbot  
+## FOBOH News Aggregation & Chatbot  
 ```
 ├── app.py                   # Streamlit app (UI + chatbot)
 ├── day_1_scrapping.py       # Scrapes news (raw JSON output)
