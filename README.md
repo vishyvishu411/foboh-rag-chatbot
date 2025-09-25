@@ -24,7 +24,6 @@ Note: These .py files should be run setrial wise as they utilize the generated J
    pip install -r requirements.txt
 
 2. run in order:
-    python day_1_scrapping.py
-    python day_2_Preprocessing.py
-    python day_3_Highlights.py
-    streamlit run app.py
+python day_1_scrapping.py
+python day_2_Preprocessing.py
+python day_3_Highlights.py
