@@ -27,8 +27,8 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 - If you don’t have time to run all scripts, you can run **app.py** directly since  
   `data/highlights.json` is already included in the repo.
 
-- Without an OpenAI API key, the app will still work, but the chatbot will return  
-  **retrieved highlights only**. With a key, it will generate **natural answers** using GPT.
+- Without an OpenAI API key, the app will not work as the chatBot generates highlights
+  /summaries with the help of prompting. 
 
 
 ## ▶️ How to Run
@@ -46,3 +46,26 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
     python day_3_Highlights.py
     streamlit run app.py
     ```
+4. Add your OpenAI API key in a `.env` file:
+   ```
+   OPENAI_API_KEY=sk-xxxx
+   ```
+   Without this, the chatbot will not be able to create meaningful
+   highlights.
+
+## 📂 Project Structure
+
+FOBOH News Aggregation & Chatbot
+├── app.py                     # Streamlit app (UI + chatbot)
+├── day_1_scrapping.py         # Scrapes news (raw JSON output)
+├── day_2_Preprocessing.py     # Deduplicates + summarizes articles
+├── day_3_Highlights.py        # Scores & selects top 5 highlights
+├── ignore.py                  # Word frequency exploration (optional to run)
+├── README.md                  # Documentation
+├── requirements.txt           # Dependencies
+├── data/
+│   ├── raw/                   # Raw scraped JSON (ignored in Git)
+│   ├── processed/             # Summarized CSVs (ignored in Git)
+│   ├── articles_with_scores/  # Scored CSVs (ignored in Git)
+│   └── highlights.json        
+└── venv/                      
