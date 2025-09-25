@@ -32,12 +32,14 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 
 
 ## ▶️ How to Run
-1. Install dependencies:
+1. Install virtual Environment
+
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. run in order:
+3. run in order:
     ```bash
     python day_1_scrapping.py
     python day_2_Preprocessing.py
