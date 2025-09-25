@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# ignore data
+data/raw/*
+data/processed/*
+data/articles_with_scores/*
+
+# keep it for future visits
+!data/highlights.json 
