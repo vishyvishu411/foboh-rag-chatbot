@@ -4,6 +4,8 @@ venv/
 # Environment variables
 .env
 
+.DS_Store
+
 # ignore data
 data/raw/*
 data/processed/*
