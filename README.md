@@ -16,7 +16,20 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 5. app.py - Displays highlights and provides a chatbot where users can ask questions using prompt engineering and RAG.
 19,48
 
-Note: These .py files should be run setrial wise as they utilize the generated JSON/CSV file from the previous .py file. You can ignore the ignore.py file. If the time does'nt allow you to run all these files, you can directly run **app.py** as it uses **highlight.json** directly file which i have uploaded here on git.
+
+## 📝 Notes
+
+- The scripts should be run **in sequence**:  
+  `day_1_scrapping.py → day_2_Preprocessing.py → day_3_Highlights.py → app.py`
+
+- `ignore.py` is optional and only used for word frequency exploration.
+
+- If you don’t have time to run all scripts, you can run **app.py** directly since  
+  `data/highlights.json` is already included in the repo.
+
+- Without an OpenAI API key, the app will still work, but the chatbot will return  
+  **retrieved highlights only**. With a key, it will generate **natural answers** using GPT.
+
 
 ## ▶️ How to Run
 1. Install dependencies:
