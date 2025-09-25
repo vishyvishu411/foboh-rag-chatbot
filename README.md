@@ -53,19 +53,19 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
    Without this, the chatbot will not be able to create meaningful
    highlights.
 
-## 📂 Project Structure
-
-FOBOH News Aggregation & Chatbot
-├── app.py                     # Streamlit app (UI + chatbot)
-├── day_1_scrapping.py         # Scrapes news (raw JSON output)
-├── day_2_Preprocessing.py     # Deduplicates + summarizes articles
-├── day_3_Highlights.py        # Scores & selects top 5 highlights
-├── ignore.py                  # Word frequency exploration (optional to run)
-├── README.md                  # Documentation
-├── requirements.txt           # Dependencies
+FOBOH News Aggregation & Chatbot  
+```
+├── app.py                   # Streamlit app (UI + chatbot)
+├── day_1_scrapping.py       # Scrapes news (raw JSON output)
+├── day_2_Preprocessing.py   # Deduplicates + summarizes articles
+├── day_3_Highlights.py      # Scores & selects top 5 highlights
+├── ignore.py                # Word frequency exploration (optional)
+├── README.md                # Documentation
+├── requirements.txt         # Dependencies
 ├── data/
-│   ├── raw/                   # Raw scraped JSON (ignored in Git)
-│   ├── processed/             # Summarized CSVs (ignored in Git)
-│   ├── articles_with_scores/  # Scored CSVs (ignored in Git)
-│   └── highlights.json        
-└── venv/                      
+│   ├── raw/                 # Raw scraped JSON (ignored in Git)
+│   ├── processed/           # Summarized CSVs (ignored in Git)
+│   ├── articles_with_scores/# Scored CSVs (ignored in Git)
+│   └── highlights.json      # Final highlights (included)
+└── venv/                    # Virtual environment (ignored in Git)
+```
