@@ -60,12 +60,13 @@ FOBOH News Aggregation & Chatbot
 ├── day_2_Preprocessing.py   # Deduplicates + summarizes articles
 ├── day_3_Highlights.py      # Scores & selects top 5 highlights
 ├── ignore.py                # Word frequency exploration (optional)
-├── README.md                # Documentation
-├── requirements.txt         # Dependencies
+├── README.md                
+├── requirements.txt         
+│── highlights.json 
 ├── data/
 │   ├── raw/                 # Raw scraped JSON (ignored in Git)
 │   ├── processed/           # Summarized CSVs (ignored in Git)
 │   ├── articles_with_scores/# Scored CSVs (ignored in Git)
-│   └── highlights.json      # Final highlights (included)
+│   └── highlights.json      
 └── venv/                    # Virtual environment (ignored in Git)
 ```
