@@ -62,7 +62,6 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 ├── ignore.py                # Word frequency exploration (optional)
 ├── README.md                
 ├── requirements.txt         
-│── highlights.json 
 ├── data/
 │   ├── raw/                 # Raw scraped JSON (ignored in Git)
 │   ├── processed/           # Summarized CSVs (ignored in Git)
