@@ -28,7 +28,8 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
   `data/highlights.json` is already included in the repo.
 
 - Without an OpenAI API key, the app will not work as the chatBot generates highlights
-  /summaries with the help of prompting. 
+  /summaries with the help of prompting. However, You can click on this link, it is the link
+  to the deployed app.py on streamline which already has my hidden access OpenAI API key.
 
 
 ## ▶️ How to Run
