@@ -11,7 +11,7 @@ from pathlib import Path
 load_dotenv()
 
 # Use API key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key= st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY"))
 
 # Load highlights
 with open("data/highlights.json", "r", encoding="utf-8") as f:

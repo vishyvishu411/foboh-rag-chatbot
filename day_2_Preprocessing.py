@@ -10,13 +10,14 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from pathlib import Path
 import os
+import streamlit as st
 
 model_embed = SentenceTransformer('all-MiniLM-L6-v2')
 
 load_dotenv()
 
 # Use API key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY"))
 
 
 ###### Train Model ######
