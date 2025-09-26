@@ -29,9 +29,10 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 
 - Without an OpenAI API key, the app will not work as the chatBot generates highlights
   /summaries with the help of prompting.
-  However, You can click on this link, it is the link
-  to the deployed app.py on streamline which already has my hidden access OpenAI API key.
-  Link: https://foboh-rag-chatbot-nnczwexnb9gzfjph22thks.streamlit.app
+  However, the deployed app already has the key configured via Streamlit Secrets.
+  
+  👉 **Deployed App URL**:  
+[https://foboh-rag-chatbot-nnczwexnb9gzfjph22thks.streamlit.app](https://foboh-rag-chatbot-nnczwexnb9gzfjph22thks.streamlit.app)
 
 
 ## ▶️ How to Run
