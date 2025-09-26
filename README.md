@@ -13,7 +13,7 @@ This project scrapes Australian news articles from news sources such SBS,Guardia
 
 4. ignore.py - Exploring the important words occuring in the titles of articles from different news sources.
 
-5. app.py - Displays highlights and provides a chatbot where users can ask questions using prompt engineering and RAG.
+5. **app.py** - Displays highlights and provides a chatbot where users can ask questions using prompt engineering and RAG.
 19,48
 
 
