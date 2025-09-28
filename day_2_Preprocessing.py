@@ -16,9 +16,13 @@ model_embed = SentenceTransformer('all-MiniLM-L6-v2')
 
 load_dotenv()
 
-# Use API key
-client = OpenAI(api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY"))
+# Use API keygit status
+try:
+    api_key = st.secrets["OPENAI_API_KEY"] # Try secrets safely
+except Exception:
+    api_key = os.getenv("OPENAI_API_KEY")
 
+client = OpenAI(api_key=api_key)
 
 ###### Train Model ######
 def training_model(df):
